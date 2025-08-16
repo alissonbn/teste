@@ -25,7 +25,7 @@ app.MapGet("/weatherforecast", () =>
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
             Random.Shared.Next(-20, 55),
             summaries[Random.Shared.Next(summaries.Length)],
-            Nome = "alisson"
+            "alisson"
         ))
         .ToArray();
     return forecast;
